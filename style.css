@@ -4,20 +4,28 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #1A1C20;
 }
-
+/*Efecto de transicion para suavizar el scroll al cambio de secciones*/
+html{
+    scroll-behavior: smooth;
+}
+/* Margin al header para que no quede sobre la secciones cuando cambia de una a otra  */
+section[id]{
+    scroll-margin-top: 120px;
+}
 /* -------------------------------------------Inicio estilo de la Seccion Main Header*/
 header {
+    position: fixed;
     width:100%;
     height: 120px;
-    left: 382px;
     background-color: #0A0B0C;
+    z-index: 99999999;
 }
 header div .logo-diego {
     width: 200px;
     cursor: pointer;
     font-size: 20px;
 }
-.wrapper {
+.container-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -39,6 +47,8 @@ header div .menu-accesibilidad {
 }
 header div .menu-accesibilidad .btn-es {
     color: #fff;
+    font-size: 18px;
+    font-weight:600;
     background: none;
     border: 1.2px solid #00ace0;
     border-radius: 10px;
@@ -46,6 +56,8 @@ header div .menu-accesibilidad .btn-es {
 }
 header div .menu-accesibilidad .btn-en {
     color: #fff;
+    font-size: 18px;
+    font-weight:600;
     background: none;
     border: none;
 }
@@ -58,7 +70,7 @@ header nav a {
 	text-decoration:none;
 	padding:10px 20px;
     font-size: 18px;
-	font-weight:500px;
+	font-weight:600;
     line-height: 21.09px;
 }
 header div .icon-mood-lithg {
@@ -69,7 +81,8 @@ header div .icon-mood-lithg {
 
 .main-section {
     height: 645.79px;
-    padding: 80px 150px;
+    padding-top: 220px;
+    margin-bottom: 100px;
     display:flex ;
     justify-content: center;
     align-items: flex-start;
@@ -78,31 +91,42 @@ header div .icon-mood-lithg {
 section .main-info{
     display: flex;
     flex-direction: column;
-    width: 650px;
+    width: 620px;
     padding-right: 50px;
-    margin-top: -30px;
+    margin-top: -40px;
     box-sizing: border-box;
 }
 section .btn-resumen{
     font-size: 22px;
-    font-weight: 500;
+    font-weight: 600;
     color: #fff;
     background: none;
     border: 1.2px solid #00ace0;
     border-radius: 15px;
-    width: 350px;
-    height: 66px;
+    width: 300px;
+    height: 60px;
 }
 section .btn-resumen:hover{
     background-color: #151618;
-  }
+}
+section .redes-sociales{
+    margin-top: 30px;
+}
 section .redes-sociales svg{
-    padding-top: 40px;
-    padding-right: 20px;
+    padding: 7px;
+    fill: #d0d0d0;
 }
 section .redes-sociales svg:hover{
-    stroke: #176dc2;
-    stroke-width: 1.8px;
+    fill: #ffffff;
+}
+section .main-fotoPerfil{
+    margin-top: 40px;
+}
+section .foto-perfil {
+    width: 460px;
+    height: 560px;
+    border-radius: 15px;
+    margin-bottom: 50px;
 }
 section .main-fotoPerfil .retangule-1 {
     position: absolute;
@@ -112,12 +136,6 @@ section .main-fotoPerfil .retangule-1 {
     border: 1.2px solid #91CEE1;
     margin-left: -25px;
     margin-top: -570px;
-}
-section .foto-perfil {
-    width: 460px;
-    height: 560px;
-    border-radius: 15px;
-    margin-bottom: 38px;
 }
 section .main-info h1{
     margin-top: 20px;
@@ -189,7 +207,7 @@ section .main-project{
     overflow: hidden;
 }
 section .main-project:hover{
-    background-color: #151719;
+    background-color: #151618;
 }
 section .main-project .info-project {
     color: #fff;
@@ -203,17 +221,17 @@ section .main-project .tecnology-project {
     padding-top: 30px;
 }
 section .main-project .tecnology-project img{
-    padding-right: 30px;
+    padding-right: 10px;
 }
 section .btn-verMas{
-    font-size: 22px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: bolder;
     color: #fff;
     background: none;
     border: 1.2px solid #00ace0;
     border-radius: 15px;
-    width: 350px;
-    height: 66px;
+    width: 200px;
+    height: 60px;
     margin-top: 50px;
     margin-bottom: 100px;
 }
@@ -290,30 +308,38 @@ section .banner-bloggin img{
     overflow: hidden;
 }
 .main-contacto textarea:hover{
-    background-color: #0f0f10;
+    background-color: #151618;
 }
 .main-contacto .text-area h1{
-    font-size: 70px;
+    font-size: 60px;
+    font-weight: 600;
     color: #00ace0;
 }
 .main-contacto .btn-enviar{
     background-color: #00C1FE;
     color:#ffffff;
-    border-radius: 50px;
-    width: 180px;
-    height: 50px;
+    border-radius: 15px;
+    width: 200px;
+    height: 60px;
     font-size: 20px;
     font-weight: bolder;
     border-style: none;
     margin-bottom: 50px;
 }
+.main-contacto .btn-enviar:hover{
+    background-color: #0084ac;
+}
 .main-contacto .redes-sociales-contact{
     margin-bottom: 50px;
 }
 .main-contacto .redes-sociales-contact svg{
-    padding: 10px;
-    fill: #D9D9D9;
+    padding: 7px;
+    fill: #d0d0d0;
 }
+.main-contacto .redes-sociales-contact svg:hover{
+    fill: #ffffff;
+}
+
 
 /*-------------------------- section de footer*/
 .footer{
