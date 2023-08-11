@@ -108,7 +108,6 @@ main {
   width: 100vw;
   height: auto;
   padding: 160px 0 100px 0;
-  border: 1px solid white;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -122,7 +121,6 @@ main {
   align-items: center;
   width: 65vw;
   height: auto;
-  border: 1px solid rgb(164, 40, 40);
   flex-direction: row;
   box-sizing: border-box;
 }
@@ -243,7 +241,6 @@ main {
   width: 100vw;
   height: auto;
   padding: 130px 0 100px 0;
-  border: 1px solid white;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -254,7 +251,6 @@ main {
 .section-projects .inner-container-projects {
   width: 65vw;
   height: auto;
-  border: 1px solid rgb(255, 104, 159);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -327,7 +323,6 @@ section .btn-verMas:hover {
   width: 100vw;
   height: auto;
   padding: 130px 0 100px 0;
-  border: 1px solid white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -339,7 +334,6 @@ section .btn-verMas:hover {
 .section-bloggin .inner-container-bloggin {
   width: 65vw;
   height: auto;
-  border: 1px solid rgb(255, 104, 159);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -382,13 +376,24 @@ section .btn-verMas:hover {
   box-sizing: border-box;
   padding: 30px;
 }
+.inner-container-bloggin .btn-verMas {
+  font-size: 20px;
+  font-weight: bolder;
+  color: #fff;
+  background: none;
+  border: 1.2px solid #00ace0;
+  border-radius: 15px;
+  width: 200px;
+  height: 60px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
 
 /*--------------------------- section principal contacto*/
 .section-contacto {
   width: 100vw;
   height: auto;
-  padding: 100px 0 100px 0;
-  border: 1px solid white;
+  padding: 0px 0 100px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -400,7 +405,6 @@ section .btn-verMas:hover {
 .section-contacto .inner-container-contact {
   width: 65vw;
   height: auto;
-  border: 1px solid rgb(255, 104, 159);
   display: flex;
   justify-content: center;
   align-items: center;
