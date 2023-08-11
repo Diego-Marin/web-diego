@@ -2,16 +2,12 @@
   margin: 0;
   padding: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #d0d0d0;
 }
 
 /*---------------------------transicion para suavizar el scroll al cambio de secciones*/
 html {
   scroll-behavior: smooth;
-}
-
-/* Margin al header para que no quede sobre la secciones cuando cambia de una a otra  */
-section[id] {
-  scroll-margin-top: 120px;
 }
 
 body {
@@ -45,7 +41,7 @@ main {
   z-index: -999;
 }
 
-/* -------------------------------------------Inicio estilo de la Seccion Main Header*/
+/* -------------------------------------------Inicio estilo de la Seccion Header*/
 .container-fixed-header {
   display: flex;
   justify-content: center;
@@ -55,7 +51,7 @@ main {
   top: 0;
   left: 0;
   width: 100%;
-  height: 90px;
+  height: 70px;
   background-color: #0A0B0C;
   padding: 10px 0;
   z-index: 99999;
@@ -69,17 +65,21 @@ main {
   flex-direction: row;
   align-items: center;
 }
+
 .inner-container-header .container-logo {
   cursor: pointer;
 }
-.inner-container-header .container-menu{
+
+.inner-container-header .container-menu {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.inner-container-header .container-nav{
+
+.inner-container-header .container-nav {
   margin-right: 30px;
 }
+
 .inner-container-header .container-nav a {
   display: inline-block;
   color: #fff;
@@ -103,10 +103,12 @@ main {
   margin-left: 15px;
 }
 
-/* -----------------------------Inicio estilo de la Seccion Main presentacion*/
+/* -----------------------------Inicio estilo de la Seccion Sobre Mi*/
 .section-sobreMi {
-  margin-top: 170px;
-  margin-bottom: 100px;
+  width: 100vw;
+  height: auto;
+  padding: 160px 0 100px 0;
+  border: 1px solid white;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -118,8 +120,10 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 65vw;
+  height: auto;
+  border: 1px solid rgb(164, 40, 40);
   flex-direction: row;
-  max-width: 100%;
   box-sizing: border-box;
 }
 
@@ -235,62 +239,73 @@ main {
 }
 
 /* ------------------------------------------Inicio de la seccion principal main projects*/
-.main-section-projects {
+.section-projects {
+  width: 100vw;
+  height: auto;
+  padding: 130px 0 100px 0;
+  border: 1px solid white;
   display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: #D9D9D9;
+  box-sizing: border-box;
+}
+
+.section-projects .inner-container-projects {
+  width: 65vw;
+  height: auto;
+  border: 1px solid rgb(255, 104, 159);
+  display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-section .banner-projets {
-  margin-top: 30px;
+.section-projects .banner-projets img {
+  width: 100%;
   display: flex;
   justify-content: center;
-}
-
-section .banner-projets img {
-  width: 1200px;
-  height: 300px;
   border-radius: 15px;
 }
 
-section .main-project {
-  width: 1088px;
-  height: 300px;
-  margin-top: 50px;
-  display: grid;
-  grid-template-columns: auto auto;
+.section-projects .container-projects {
+  margin-top: 30px;
+}
+
+.container-projects .project {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  align-content: center;
+  flex-direction: row;
+  width: 60vw;
   border: 1.2px solid #00ace0;
   border-radius: 15px;
   box-sizing: border-box;
   overflow: hidden;
+  margin-top: 30px
 }
 
-section .main-project:hover {
+.section-projects .project:hover {
   background-color: #151618;
 }
 
-section .main-project .info-project {
-  color: #fff;
-  padding: 50px;
+.section-projects .info-project {
+  padding: 30px;
 }
 
-section .main-project .img-project img {
-  width: 400px;
-  height: 350px;
+.section-projects .project .img-project {
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
-section .main-project .tecnology-project {
-  padding-top: 30px;
+.section-projects .tecnology-project {
+  padding-top: 20px;
 }
 
-section .main-project .tecnology-project img {
-  padding-right: 10px;
+.section-projects .info-project p {
+  padding-top: 20px;
 }
 
-section .btn-verMas {
+.section-projects .btn-verMas {
   font-size: 20px;
   font-weight: bolder;
   color: #fff;
@@ -308,46 +323,59 @@ section .btn-verMas:hover {
 }
 
 /* -------------------------------------Inicio de la Seccion de bloggin*/
-.main-section-bloggin {
+.section-bloggin {
+  width: 100vw;
+  height: auto;
+  padding: 130px 0 100px 0;
+  border: 1px solid white;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #D9D9D9;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.section-bloggin .inner-container-bloggin {
+  width: 65vw;
+  height: auto;
+  border: 1px solid rgb(255, 104, 159);
+  display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-section .banner-bloggin img {
-  margin-top: 30px;
-  width: 1200px;
-  height: 300px;
+.section-bloggin .banner-bloggin img {
+  width: 100%;
   border-radius: 15px;
 }
 
-.main-section-bloggin .entradas-bloggin {
-  width: 1088px;
+.section-bloggin .entradas-bloggin {
+  width: 60vw;
+  height: auto;
   margin-top: 80px;
-  grid-gap: 60px;
+  grid-gap: 30px;
   display: grid;
   grid-template-columns: auto auto;
   color: #D9D9D9;
 }
 
-.main-section-bloggin .entradas-bloggin .entrada-blog:hover {
+.section-bloggin .entradas-bloggin .entrada-blog:hover {
   background-color: #151618;
 }
 
-.main-section-bloggin .entradas-bloggin .entrada-blog {
+.section-bloggin .entradas-bloggin .entrada-blog {
   width: auto;
   height: auto;
   border: 1.2px solid #00ace0;
   border-radius: 15px;
   overflow: hidden;
-  /* box-sizing: content-box;
-    display: flex;
-    flex-wrap: wrap; */
 }
 
 .entradas-bloggin .entrada-blog img {
-  width: 550px;
-  height: 200px;
+  width: 100%;
+  height: 150px;
 }
 
 .entradas-bloggin .entrada-blog .info-bloggin {
@@ -356,45 +384,54 @@ section .banner-bloggin img {
 }
 
 /*--------------------------- section principal contacto*/
-.main-contacto {
-  color: #D9D9D9;
+.section-contacto {
+  width: 100vw;
+  height: auto;
+  padding: 100px 0 100px 0;
+  border: 1px solid white;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-}
-
-.main-contacto .text-area {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  margin-bottom: 50px;
+  color: #D9D9D9;
+  box-sizing: border-box;
+  flex-direction: column;
 }
 
-.main-contacto textarea {
+.section-contacto .inner-container-contact {
+  width: 65vw;
+  height: auto;
+  border: 1px solid rgb(255, 104, 159);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.inner-container-contact textarea {
   resize: none;
   font-size: 16px;
   background-color: #1A1C20;
   border: 1.2px solid #00ace0;
   color: #D9D9D9;
-  border-radius: 20px;
-  width: 1088px;
-  height: 242px;
-  padding: 30px;
-  overflow: hidden;
+  border-radius: 15px;
+  width: 100%;
+  height: 100px;
+  margin-top: 30px;
+  padding: 20px;
 }
 
-.main-contacto textarea:hover {
+.inner-container-contact textarea:hover {
   background-color: #151618;
 }
 
-.main-contacto .text-area h1 {
+.inner-container-contact h1 {
   font-size: 60px;
   font-weight: 600;
   color: #00ace0;
 }
 
-.main-contacto .btn-enviar {
+.inner-container-contact .btn-enviar {
+  margin-top: 30px;
   background-color: #00C1FE;
   color: #ffffff;
   border-radius: 15px;
@@ -403,31 +440,16 @@ section .banner-bloggin img {
   font-size: 20px;
   font-weight: bolder;
   border-style: none;
-  margin-bottom: 50px;
 }
 
-.main-contacto .btn-enviar:hover {
+.inner-container-contact .btn-enviar:hover {
   background-color: #0084ac;
 }
-
-.main-contacto .redes-sociales-contact {
-  margin-bottom: 50px;
-}
-
-.main-contacto .redes-sociales-contact svg {
-  padding: 7px;
-  fill: #d0d0d0;
-}
-
-.main-contacto .redes-sociales-contact svg:hover {
-  fill: #ffffff;
-}
-
 
 /*-------------------------- section de footer*/
 .footer {
   background-color: #0A0B0C;
-  width: auto;
+  width: 100vw;
   height: 90px;
   display: flex;
   justify-content: center;
@@ -438,7 +460,7 @@ section .banner-bloggin img {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 1200px;
+  width: 70vw;
   color: #D9D9D9;
   font-weight: bolder;
 }
