@@ -26,7 +26,15 @@ main {
   align-items: center;
   flex-direction: column;
 }
+body .container-project{
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
 
+/* Estilos de iluminacion puntero*/
 .shadow-pointer {
   pointer-events: none;
   background: radial-gradient(circle at center, rgb(215, 244, 246) 5%, transparent 80%, rgb(0, 0, 0) 100%, transparent 100%);
@@ -37,8 +45,12 @@ main {
   left: var(--mouse-x);
   top: var(--mouse-y);
   transform: translate(-50%, -50%);
-  opacity: 3%;
+  opacity: 4%;
   z-index: -999;
+}
+
+.separador-section{
+  width: 100vw;
 }
 
 /* -------------------------------------------Inicio estilo de la Seccion Header*/
@@ -93,15 +105,17 @@ main {
   justify-content: center;
   align-items: center;
 }
-
-.inner-container-header button {
-  background-color: whitesmoke;
-  border-style: none;
-  width: 30px;
-  height: 35px;
-  border-radius: 5px;
-  margin-left: 15px;
+.inner-container-header .cambio-idioma{
+  font-size: 18px;
+  font-weight: bolder;
+  background: none;
+  border: 1.2px solid #00ace0;
+  border-radius: 7px;
+  width: 62px;
+  height: 46px;
+  margin-left: 20px;
 }
+
 
 /* -----------------------------Inicio estilo de la Seccion Sobre Mi*/
 .section-sobreMi {
@@ -149,7 +163,7 @@ main {
   width: 349px;
   height: 435px;
   border-radius: 15px;
-  border: 1.2px solid #91CEE1;
+  border: 1.2px solid #00ace0;
   margin-left: -15px;
   margin-top: -468px;
   box-sizing: border-box;
@@ -176,7 +190,7 @@ main {
 }
 
 .section-sobreMi .redes-sociales svg {
-  padding: 7px;
+  padding: 3px;
   fill: #d0d0d0;
 }
 
@@ -283,6 +297,9 @@ main {
 .section-projects .project:hover {
   background-color: #151618;
 }
+.container-projects .project-link{
+  text-decoration: none;
+}
 
 .section-projects .info-project {
   padding: 30px;
@@ -314,7 +331,7 @@ main {
   margin-bottom: 100px;
 }
 
-section .btn-verMas:hover {
+.section-projects .btn-verMas:hover {
   background-color: #151618;
 }
 
@@ -376,6 +393,7 @@ section .btn-verMas:hover {
   box-sizing: border-box;
   padding: 30px;
 }
+
 .inner-container-bloggin .btn-verMas {
   font-size: 20px;
   font-weight: bolder;
@@ -388,12 +406,15 @@ section .btn-verMas:hover {
   margin-top: 50px;
   margin-bottom: 100px;
 }
+.inner-container-bloggin .btn-verMas:hover {
+  background-color: #151618;
+}
 
 /*--------------------------- section principal contacto*/
 .section-contacto {
   width: 100vw;
   height: auto;
-  padding: 0px 0 100px 0;
+  padding: 100px 0 100px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -409,6 +430,7 @@ section .btn-verMas:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
 .inner-container-contact textarea {
@@ -421,7 +443,7 @@ section .btn-verMas:hover {
   width: 100%;
   height: 100px;
   margin-top: 30px;
-  padding: 20px;
+  padding: 15px;
 }
 
 .inner-container-contact textarea:hover {
@@ -429,27 +451,27 @@ section .btn-verMas:hover {
 }
 
 .inner-container-contact h1 {
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 600;
   color: #00ace0;
 }
 
 .inner-container-contact .btn-enviar {
-  margin-top: 30px;
-  background-color: #00C1FE;
-  color: #ffffff;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #fff;
+  background: none;
+  border: 1.2px solid #00ace0;
   border-radius: 15px;
   width: 200px;
   height: 60px;
-  font-size: 20px;
-  font-weight: bolder;
-  border-style: none;
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 .inner-container-contact .btn-enviar:hover {
-  background-color: #0084ac;
+  background-color: #151618;
 }
-
 /*-------------------------- section de footer*/
 .footer {
   background-color: #0A0B0C;
@@ -465,6 +487,5 @@ section .btn-verMas:hover {
   align-items: center;
   justify-content: space-between;
   width: 70vw;
-  color: #D9D9D9;
-  font-weight: bolder;
+  font-weight: bold;
 }
