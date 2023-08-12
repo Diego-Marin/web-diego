@@ -7,11 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./assets/img/isotipo-diego.svg" type="image/x-icon">
   <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="./project1.html">
+  <link rel="stylesheet" href="./project.html">
+  <link rel="html" href="./pageProjects.html">
+  <link rel="html" href="./project.html">
+  <link rel="html" href="./pageBlogs.html">
+  <link rel="html" href="./blog.html">
   <title>Diego Mejia</title>
 </head>
 
-<body>
+<body class="cuerpo">
   <header class="container-fixed-header">
     <div class="inner-container-header">
       <div class="container-logo">
@@ -35,10 +39,10 @@
 
         <div class="container-nav">
           <nav class="menu-nav">
-            <a href="#section-sobreMi">Sobre mí</a>
-            <a href="#section-projects">Proyectos</a>
-            <a href="#section-bloggin">Blogs</a>
-            <a href="#section-contact">Contacto</a>
+            <a class="elemento-link-nav" href="#section-sobreMi">Sobre mí</a>
+            <a class="elemento-link-nav" href="#section-projects">Proyectos</a>
+            <a class="elemento-link-nav" href="#section-bloggin">Blogs</a>
+            <a class="elemento-link-nav" href="#section-contact">Contacto</a>
           </nav>
         </div>
 
@@ -60,11 +64,12 @@
       <div class="inner-content-sobreMi">
 
         <div class="info-presentacion">
-          <p>Hola, mi nombre es</p>
-
-          <h1 class="gradient-text">Diego Mejia<br>Construyo herramientas<br>para la web<span
-              class="blinking-text">__</span></h1>
-
+          <p>Hola 👋</p>
+          <h1 class="gradient-text">Soy Diego Mejia</h1>
+          <h2 class="gradient-text-h2">
+            Construyo herramientas<br>para la web<span class="blinking-text">__</span>
+          </h2>
+          <h3>Desarrollador Frontend</h3>
           <p class="presentacion">Me especializo en crear experiencias digitales excepcionales, centrándome en el
             desarrollo Frontend. Combino creatividad y habilidades técnicas para construir interfaces atractivas y
             funcionales que cautivan a los usuarios.</p>
@@ -73,25 +78,25 @@
           </a>
 
           <div class="redes-sociales">
-            <a href="https://github.com/Diego-Marin" target="_blank"><svg width="30" viewBox="0 0 31 29" fill="none"
+            <a href="https://github.com/Diego-Marin" target="_blank"><svg width="28" viewBox="0 0 31 29" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M4.84011 21.8327L5.12211 21.4198L4.84011 21.8327C4.89476 21.87 4.95578 21.9047 4.99271 21.9256C4.9992 21.9293 5.00494 21.9325 5.00978 21.9353L5.25881 21.5018L5.00978 21.9353C5.16268 22.0231 5.86627 22.4797 6.39976 23.7611C6.40581 23.7756 6.41001 23.7875 6.42271 23.8216C6.4961 24.0184 6.77331 24.6624 7.45256 25.2398C8.14394 25.8274 9.21596 26.3147 10.8136 26.2339C11.2163 26.2136 11.5085 26.5047 11.5114 26.8002C11.5129 26.9615 11.5144 27.1111 11.5158 27.2478C11.5196 27.6268 11.5224 27.9071 11.5224 28.0657C11.5224 28.1384 11.4968 28.1926 11.4667 28.222C11.4465 28.2416 11.374 28.3008 11.1617 28.2825C11.1545 28.2819 11.1377 28.2792 11.1075 28.2694C5.28562 26.371 1.08069 21.0602 1.08069 14.8641C1.08069 7.09663 7.68368 0.707886 15.7907 0.707886C23.8977 0.707886 30.5007 7.09663 30.5007 14.8641C30.5007 21.061 26.2964 26.3691 20.4747 28.2721C20.4456 28.2816 20.4291 28.2844 20.4219 28.2851C20.2054 28.3057 20.1344 28.2457 20.1163 28.2281C20.0877 28.2001 20.0608 28.1454 20.0608 28.0675C20.0608 27.9097 20.0629 27.6328 20.0657 27.2601C20.0671 27.0691 20.0687 26.8529 20.0703 26.6147C20.0751 25.914 20.0799 25.0279 20.0799 24.0462C20.0799 23.8058 20.066 23.577 20.0399 23.3598C20.0015 23.04 20.0907 22.5689 20.2996 22.1416C20.5146 21.7017 20.7882 21.4429 21.0132 21.3772C22.3347 20.9914 23.5939 20.3297 24.5187 19.1564C25.4453 17.9806 25.9927 16.3464 25.9927 14.0983C25.9927 12.635 25.5368 11.3851 24.7527 10.3589C24.6091 10.1711 24.5543 9.90752 24.6116 9.64903C24.7649 8.9582 24.8467 7.87986 24.4166 6.5731L23.9417 6.7294L24.4166 6.5731C24.2689 6.12432 23.8543 5.72741 23.2833 5.75671C22.6175 5.79088 21.4531 6.05365 19.7152 7.12297C19.5857 7.20259 19.4278 7.22836 19.279 7.19383C18.1517 6.93231 16.9667 6.80099 15.7928 6.79598L15.7885 6.79599C14.6132 6.80099 13.4297 6.93225 12.3042 7.1937C12.1553 7.22829 11.9973 7.20256 11.8678 7.12297C10.1283 6.05338 8.96266 5.79077 8.29637 5.75669C7.72535 5.72749 7.31049 6.12431 7.16276 6.57343C6.73186 7.88347 6.81599 8.96391 6.97049 9.65491C7.02787 9.91156 6.97374 10.1728 6.83146 10.3593C6.04826 11.3858 5.5867 12.6358 5.5867 14.1001C5.5867 16.5042 6.21513 18.2062 7.25939 19.3957C8.29798 20.5788 9.69589 21.1953 11.1219 21.534C11.2603 21.5669 11.4356 21.7038 11.5647 21.9586C11.6925 22.2106 11.7224 22.4785 11.6732 22.6578C11.6514 22.7374 11.6106 22.8295 11.5604 22.9015C11.5154 22.9661 11.4864 22.9819 11.4866 22.9824C11.0192 23.138 10.4048 23.2565 9.79399 23.139C9.2035 23.0254 8.57451 22.6843 8.05669 21.8351L8.05666 21.8351L8.0459 21.8171C7.99343 21.7294 7.74768 21.3375 7.31138 20.9476C6.87433 20.5569 6.22068 20.1463 5.36161 20.0782L5.3616 20.0782C5.33055 20.0757 5.29635 20.0741 5.25899 20.0747C5.1995 20.0756 5.06855 20.0801 4.92351 20.1026C4.79833 20.122 4.5772 20.1662 4.39745 20.2944C4.298 20.3654 4.17951 20.4848 4.12718 20.6679C4.07342 20.8559 4.1117 21.0326 4.17806 21.1707C4.29513 21.4145 4.54136 21.6287 4.84011 21.8327Z"
                   stroke="#D9D9D9" />
               </svg></a>
-            <a href="https://www.instagram.com/diego___mejia/" target="_blank"><svg width="30" viewBox="0 0 29 27"
+            <a href="https://www.instagram.com/diego___mejia/" target="_blank"><svg width="28" viewBox="0 0 29 27"
                 fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M0.574829 5.5154C0.574829 2.87882 2.85055 0.693359 5.72425 0.693359H22.6725C25.5462 0.693359 27.8219 2.87882 27.8219 5.5154V21.4815C27.8219 24.1181 25.5462 26.3036 22.6725 26.3036H5.72425C2.85055 26.3036 0.574829 24.1181 0.574829 21.4815V5.5154ZM25.9972 4.18489C25.9972 3.14661 25.1121 2.35438 24.0849 2.35438C23.0577 2.35438 22.1725 3.1466 22.1725 4.18489C22.1725 5.22318 23.0577 6.0154 24.0849 6.0154C25.1121 6.0154 25.9972 5.22317 25.9972 4.18489ZM23.1725 13.4985C23.1725 8.78531 19.1265 5.0154 14.1984 5.0154C9.27024 5.0154 5.22425 8.78531 5.22425 13.4985C5.22425 18.2116 9.27024 21.9815 14.1984 21.9815C19.1265 21.9815 23.1725 18.2116 23.1725 13.4985ZM10.5465 10.0992C11.5102 9.19127 12.8234 8.67642 14.1984 8.67642C15.5734 8.67642 16.8866 9.19127 17.8503 10.0992C18.813 11.0061 19.3478 12.2295 19.3478 13.4985C19.3478 14.7674 18.813 15.9908 17.8503 16.8978C16.8866 17.8056 15.5734 18.3205 14.1984 18.3205C12.8234 18.3205 11.5102 17.8056 10.5465 16.8978C9.58378 15.9908 9.04896 14.7674 9.04896 13.4985C9.04896 12.2295 9.58378 11.0061 10.5465 10.0992Z"
                   stroke="#D9D9D9" />
               </svg></a>
-            <a href="https://twitter.com/diego_mariin" target="_blank"><svg width="30" viewBox="0 0 32 25" fill="none"
+            <a href="https://twitter.com/diego_mariin" target="_blank"><svg width="28" viewBox="0 0 32 25" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M1.4795 21.279L1.47951 21.279C1.58039 21.1665 1.72828 21.1014 1.88995 21.1032C3.0968 21.1172 6.47094 21.0618 8.89472 20.0462C9.44673 19.8149 9.70209 19.3147 9.68302 18.8152C9.66471 18.3357 9.39952 17.8632 8.95557 17.5767C6.3251 15.8793 2.36132 12.0842 2.36132 6.44091C2.36132 4.52878 2.8576 2.69101 3.10327 1.90083C3.13885 1.7864 3.2273 1.68673 3.35571 1.63175L3.70323 1.48293C3.9005 1.39846 4.13453 1.44928 4.28357 1.61477C7.19752 4.8502 10.3654 7.54392 15.0936 8.17786C15.6111 8.24724 16.0599 8.03159 16.3615 7.70108C16.6577 7.37634 16.8271 6.92904 16.8195 6.47044C16.8191 6.44159 16.8188 6.4127 16.8188 6.38377C16.8188 3.26064 19.5618 0.664551 23.0238 0.664551C24.6596 0.664551 26.1418 1.24241 27.2421 2.18628C27.5447 2.44589 28.0013 2.65333 28.5007 2.52316C29.5016 2.26228 30.7179 1.58833 31.2789 1.25984C31.3144 1.23905 31.3523 1.24469 31.3752 1.26206C31.3949 1.27702 31.3987 1.29402 31.3985 1.30169C31.3457 2.9585 30.7958 4.32533 29.6421 5.65214C29.3803 5.95317 29.2364 6.34359 29.2488 6.74816C29.2524 6.86572 29.2543 6.98348 29.2543 7.1008C29.2543 11.5771 27.6124 15.8738 24.4827 19.0498C21.3571 22.2216 16.7199 24.3036 10.6752 24.3036C6.06624 24.3036 2.90941 22.7564 1.51596 21.9009C1.32834 21.7857 1.26802 21.5149 1.46376 21.2966C1.46376 21.2966 1.46376 21.2966 1.46377 21.2966L1.4795 21.279Z"
                   stroke="#D9D9D9" />
               </svg></a>
-            <a href="https://www.linkedin.com/in/diiego-marin/" target="_blank"><svg width="43" viewBox="0 0 32 22" fill="none"
+            <a href="https://www.linkedin.com/in/diiego-marin/" target="_blank"><svg width="42" viewBox="0 0 32 22" fill="none"
               xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/>
@@ -130,7 +135,7 @@
 
         <div class="container-projects">
 
-          <a href="project1.html" class="project-link">
+          <a href="./project.html" class="project-link">
             <div class="project">
 
               <div class="info-project">
@@ -155,7 +160,7 @@
   
             </div>
           </a>
-          <a href="project1.html" class="project-link">
+          <a href="./project.html" class="project-link">
             <div class="project">
 
               <div class="info-project">
@@ -183,7 +188,9 @@
 
         </div>
 
-        <button class="btn-verMas">Ver más...</button>
+        <a href="./pageProjects.html">
+          <button class="btn-verMas">Ver más...</button>
+        </a>
       </div>
 
     </section>
@@ -211,64 +218,72 @@
 
         <div class="entradas-bloggin">
 
-          <div class="entrada-blog">
-            <div class="img-bloggin">
-              <img src="./assets/img/img-blog-2.png" alt="">
+          <a href="./blog.html" class="blog-link">
+            <div class="entrada-blog">
+              <div class="img-bloggin">
+                <img src="./assets/img/img-blog-2.png" alt="">
+              </div>
+  
+              <div class="info-bloggin">
+                <h2>Typography</h2>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eos molestias in veniam eum saepe
+                  odio,
+                  id unde, numquam architecto maxime cumque itaque nulla aperiam eveniet repellat. Corporis ea doloremque
+                  officia.</P>
+              </div>
             </div>
+          </a>
+          <a href="./blog.html" class="blog-link">
+            <div class="entrada-blog">
+              <div class="img-bloggin">
+                <img src="./assets/img/img-blog-1.jpg" alt="">
+              </div>
+  
+              <div class="info-bloggin">
+                <h2>Typography</h2>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eos molestias in veniam eum saepe
+                  odio,
+                  id unde, numquam architecto maxime cumque itaque nulla aperiam eveniet repellat. Corporis ea doloremque
+                  officia</P>
+              </div>
+            </div>
+          </a>
+          <a href="./blog.html" class="blog-link">
+            <div class="entrada-blog">
+              <div class="img-bloggin">
+                <img src="./assets/img/img-blog-1.jpg" alt="">
+              </div>
+  
+              <div class="info-bloggin">
+                <h2>Typography</h2>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eos molestias in veniam eum saepe
+                  odio,
+                  id unde, numquam architecto maxime cumque itaque nulla aperiam eveniet repellat. Corporis ea doloremque
+                  officia.</P>
+              </div>
+            </div>
+          </a>
+          <a href="./blog.html" class="blog-link">
+            <div class="entrada-blog">
+              <div class="img-bloggin">
+                <img src="./assets/img/img-blog-2.png" alt="">
+              </div>
+  
+              <div class="info-bloggin">
+                <h2>Typography</h2>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eos molestias in veniam eum saepe
+                  odio,
+                  id unde, numquam architecto maxime cumque itaque nulla aperiam eveniet repellat. Corporis ea doloremque
+                  officia.</P>
+              </div>
+            </div>
+          </a>
 
-            <div class="info-bloggin">
-              <h2>Typography</h2>
-              <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eos molestias in veniam eum saepe
-                odio,
-                id unde, numquam architecto maxime cumque itaque nulla aperiam eveniet repellat. Corporis ea doloremque
-                officia.</P>
-            </div>
-          </div>
-
-          <div class="entrada-blog">
-            <div class="img-bloggin">
-              <img src="./assets/img/img-blog-1.jpg" alt="">
-            </div>
-
-            <div class="info-bloggin">
-              <h2>Typography</h2>
-              <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eos molestias in veniam eum saepe
-                odio,
-                id unde, numquam architecto maxime cumque itaque nulla aperiam eveniet repellat. Corporis ea doloremque
-                officia</P>
-            </div>
-          </div>
-
-          <div class="entrada-blog">
-            <div class="img-bloggin">
-              <img src="./assets/img/img-blog-1.jpg" alt="">
-            </div>
-
-            <div class="info-bloggin">
-              <h2>Typography</h2>
-              <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eos molestias in veniam eum saepe
-                odio,
-                id unde, numquam architecto maxime cumque itaque nulla aperiam eveniet repellat. Corporis ea doloremque
-                officia.</P>
-            </div>
-          </div>
-
-          <div class="entrada-blog">
-            <div class="img-bloggin">
-              <img src="./assets/img/img-blog-2.png" alt="">
-            </div>
-
-            <div class="info-bloggin">
-              <h2>Typography</h2>
-              <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eos molestias in veniam eum saepe
-                odio,
-                id unde, numquam architecto maxime cumque itaque nulla aperiam eveniet repellat. Corporis ea doloremque
-                officia.</P>
-            </div>
-          </div>
         </div>
-
-        <button class="btn-verMas">Ver más...</button>
+        <a href="./pageBlogs.html" class="blog-link">
+          <button class="btn-verMas">Ver más...</button>
+        </a>
+        
       </div>
 
     </section>

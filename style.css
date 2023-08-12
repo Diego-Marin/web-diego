@@ -17,21 +17,22 @@ body {
   align-items: center;
   flex-direction: column;
   background-color: #1A1C20;
+  /*Efecto de puntos para brackground*/
+  padding: 0;
+  margin: 0;
+  background-image: radial-gradient(#9f9f9f32 1.2px, transparent 1.2px);
+  background-size: 30px 30px;
 }
-
+body .pageProject{
+  width: 100vw;
+  height: 100vh;
+}
 main {
   width: 65vw;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-body .container-project{
-  display: flex;
-  justify-content:center ;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
 }
 
 /* Estilos de iluminacion puntero*/
@@ -49,7 +50,7 @@ body .container-project{
   z-index: -999;
 }
 
-.separador-section{
+.separador-section {
   width: 100vw;
 }
 
@@ -62,7 +63,7 @@ body .container-project{
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 70px;
   background-color: #0A0B0C;
   padding: 10px 0;
@@ -70,10 +71,9 @@ body .container-project{
 }
 
 .inner-container-header {
-  width: 70vw;
+  width: 65vw;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-direction: row;
   align-items: center;
 }
@@ -92,12 +92,32 @@ body .container-project{
   margin-right: 30px;
 }
 
-.inner-container-header .container-nav a {
+.menu-nav a {
+  position: relative;
+  text-decoration: none;
   display: inline-block;
   color: #fff;
   text-decoration: none;
   margin-right: 20px;
   font-weight: 500;
+}
+.menu-nav a::after {
+  content: '';
+  margin-bottom: -5px;
+  position: absolute;
+  width: 100%;
+  height: 1px; /* Grosor de la línea */
+  bottom: -1px; /* Colocar la línea justo debajo del texto */
+  left: 0;
+  background-color: #00ace0; /* Color de la línea */
+  transform: scaleX(0); /* Inicialmente la línea no es visible */
+  transform-origin: center;
+  transition: transform 0.3s ease; /* Agregar transición suave al efecto */
+}
+
+/* Cambiar el ancho de la línea en estado de hover */
+.menu-nav a:hover::after {
+  transform: scaleX(1);
 }
 
 .inner-container-header .container-accesibilidad {
@@ -105,7 +125,8 @@ body .container-project{
   justify-content: center;
   align-items: center;
 }
-.inner-container-header .cambio-idioma{
+
+.inner-container-header .cambio-idioma {
   font-size: 18px;
   font-weight: bolder;
   background: none;
@@ -115,7 +136,9 @@ body .container-project{
   height: 46px;
   margin-left: 20px;
 }
-
+.inner-container-header .cambio-idioma:hover {
+  background-color: #242529;
+}
 
 /* -----------------------------Inicio estilo de la Seccion Sobre Mi*/
 .section-sobreMi {
@@ -124,7 +147,7 @@ body .container-project{
   padding: 160px 0 100px 0;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   color: #D9D9D9;
   box-sizing: border-box;
 }
@@ -139,7 +162,7 @@ body .container-project{
   box-sizing: border-box;
 }
 
-.section-sobreMi .info-presentacion {
+.inner-content-sobreMi .info-presentacion {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -147,63 +170,22 @@ body .container-project{
   margin-right: 10PX;
 }
 
-.section-sobreMi .fotoPerfil {
-  padding: 20px;
-}
-
-.section-sobreMi .fotoPerfil img {
-  width: 350px;
-  height: auto;
-  border-radius: 15px;
-  margin-bottom: 50px;
-}
-
-.section-sobreMi .retangule {
-  position: absolute;
-  width: 349px;
-  height: 435px;
-  border-radius: 15px;
-  border: 1.2px solid #00ace0;
-  margin-left: -15px;
-  margin-top: -468px;
-  box-sizing: border-box;
-}
-
-.section-sobreMi .btn-resumen {
-  font-size: 22px;
-  font-weight: 600;
-  color: #fff;
-  background: none;
-  border: 1.2px solid #00ace0;
-  border-radius: 15px;
-  width: 300px;
-  height: 60px;
-  margin-top: 30px;
-}
-
-.section-sobreMi .btn-resumen:hover {
-  background-color: #151618;
-}
-
-.section-sobreMi .redes-sociales {
-  margin-top: 30px;
-}
-
-.section-sobreMi .redes-sociales svg {
-  padding: 3px;
-  fill: #d0d0d0;
-}
-
-.section-sobreMi .redes-sociales svg:hover {
-  fill: #ffffff;
-}
-
 /* Estilos para el h1 con efectos degradado */
-.gradient-text {
-  margin-top: 20px;
-  font-size: 50px;
+.inner-content-sobreMi .gradient-text {
+  font-size: 52px;
   font-weight: 500;
-  line-height: 50px;
+  animation: fluido 10s ease-in-out infinite;
+  background: linear-gradient(-45deg, #e73c7e, #00C1FE, #23d5ab, #775DF7);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.inner-content-sobreMi .gradient-text-h2 {
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 40px;
   animation: fluido 10s ease-in-out infinite;
   background: linear-gradient(-45deg, #e73c7e, #00C1FE, #23d5ab, #775DF7);
   background-size: 300%;
@@ -227,7 +209,7 @@ body .container-project{
 }
 
 /* Estilos para el texto con efecto de parpadeo */
-.blinking-text {
+.inner-content-sobreMi .blinking-text {
   -webkit-text-fill-color: rgb(54, 210, 241);
   font-size: 40px;
   font-weight: bolder;
@@ -246,8 +228,65 @@ body .container-project{
   }
 }
 
-.section-sobreMi .presentacion {
+.inner-content-sobreMi h3 {
+  font-size: 25px;
+  margin-top: 20px;
+  font-style: italic;
+}
+
+.inner-content-sobreMi .presentacion {
   margin-top: 20px
+}
+
+.inner-content-sobreMi .btn-resumen {
+  font-size: 20px;
+  font-weight: bolder;
+  color: #fff;
+  background-color: #1516187f;
+  border: 1.2px solid #00ace0;
+  border-radius: 15px;
+  width: 200px;
+  height: 60px;
+  margin-top: 30px;
+}
+
+.inner-content-sobreMi .btn-resumen:hover {
+  background-color: #151618;
+}
+
+.inner-content-sobreMi .redes-sociales {
+  margin-top: 25px;
+}
+
+.inner-content-sobreMi .redes-sociales svg {
+  padding: 8px;
+  fill: #d0d0d0;
+}
+
+.inner-content-sobreMi .redes-sociales svg:hover {
+  fill: #ffffff;
+}
+
+.inner-content-sobreMi .fotoPerfil {
+  padding: 20px;
+}
+
+.inner-content-sobreMi .fotoPerfil img {
+  width: 350px;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 50px;
+}
+
+.inner-content-sobreMi .retangule {
+  position: absolute;
+  width: 349px;
+  height: 435px;
+  border-radius: 15px;
+  border: 1.2px solid #00ace0;
+  margin-left: -15px;
+  margin-top: -468px;
+  box-sizing: border-box;
 }
 
 /* ------------------------------------------Inicio de la seccion principal main projects*/
@@ -291,13 +330,15 @@ body .container-project{
   border-radius: 15px;
   box-sizing: border-box;
   overflow: hidden;
-  margin-top: 30px
+  margin-top: 30px;
+  background-color: #1516187f;
 }
 
 .section-projects .project:hover {
-  background-color: #151618;
+  background-color: #111213;
 }
-.container-projects .project-link{
+
+.container-projects .project-link {
   text-decoration: none;
 }
 
@@ -329,6 +370,7 @@ body .container-project{
   height: 60px;
   margin-top: 50px;
   margin-bottom: 100px;
+  background-color: #1516187f;
 }
 
 .section-projects .btn-verMas:hover {
@@ -370,6 +412,7 @@ body .container-project{
   display: grid;
   grid-template-columns: auto auto;
   color: #D9D9D9;
+  background-color: #1516187f;
 }
 
 .section-bloggin .entradas-bloggin .entrada-blog:hover {
@@ -382,6 +425,9 @@ body .container-project{
   border: 1.2px solid #00ace0;
   border-radius: 15px;
   overflow: hidden;
+}
+.entradas-bloggin .blog-link{
+    text-decoration: none;
 }
 
 .entradas-bloggin .entrada-blog img {
@@ -398,7 +444,7 @@ body .container-project{
   font-size: 20px;
   font-weight: bolder;
   color: #fff;
-  background: none;
+  background-color: #1516187f;
   border: 1.2px solid #00ace0;
   border-radius: 15px;
   width: 200px;
@@ -406,6 +452,7 @@ body .container-project{
   margin-top: 50px;
   margin-bottom: 100px;
 }
+
 .inner-container-bloggin .btn-verMas:hover {
   background-color: #151618;
 }
@@ -472,6 +519,7 @@ body .container-project{
 .inner-container-contact .btn-enviar:hover {
   background-color: #151618;
 }
+
 /*-------------------------- section de footer*/
 .footer {
   background-color: #0A0B0C;
@@ -486,6 +534,6 @@ body .container-project{
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 70vw;
-  font-weight: bold;
+  width: 65vw;
+  font-weight: 600;
 }
