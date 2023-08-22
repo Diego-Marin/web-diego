@@ -23,10 +23,12 @@ body {
   background-image: radial-gradient(#9f9f9f32 1.2px, transparent 1.2px);
   background-size: 30px 30px;
 }
-body .pageProject{
+
+body .pageProject {
   width: 100vw;
   height: 100vh;
 }
+
 main {
   width: 65vw;
   display: flex;
@@ -101,18 +103,24 @@ main {
   margin-right: 20px;
   font-weight: 500;
 }
+
 .menu-nav a::after {
   content: '';
   margin-bottom: -5px;
   position: absolute;
   width: 100%;
-  height: 1px; /* Grosor de la línea */
-  bottom: -1px; /* Colocar la línea justo debajo del texto */
+  height: 1px;
+  /* Grosor de la línea */
+  bottom: -1px;
+  /* Colocar la línea justo debajo del texto */
   left: 0;
-  background-color: #00ace0; /* Color de la línea */
-  transform: scaleX(0); /* Inicialmente la línea no es visible */
+  background-color: #00ace0;
+  /* Color de la línea */
+  transform: scaleX(0);
+  /* Inicialmente la línea no es visible */
   transform-origin: center;
-  transition: transform 0.3s ease; /* Agregar transición suave al efecto */
+  transition: transform 0.3s ease;
+  /* Agregar transición suave al efecto */
 }
 
 /* Cambiar el ancho de la línea en estado de hover */
@@ -136,6 +144,7 @@ main {
   height: 46px;
   margin-left: 20px;
 }
+
 .inner-container-header .cambio-idioma:hover {
   background-color: #242529;
 }
@@ -293,7 +302,7 @@ main {
 .section-projects {
   width: 100vw;
   height: auto;
-  padding: 130px 0 100px 0;
+  padding: 110px 0 100px 0;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -301,7 +310,7 @@ main {
   box-sizing: border-box;
 }
 
-.section-projects .inner-container-projects {
+.inner-container-projects {
   width: 65vw;
   height: auto;
   display: flex;
@@ -309,23 +318,39 @@ main {
   align-items: center;
   flex-direction: column;
 }
-
-.section-projects .banner-projets img {
-  width: 100%;
+.banner-projets {
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  width: 100%;
+  max-height: 200px;
   border-radius: 15px;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
-.section-projects .container-projects {
-  margin-top: 30px;
+.banner-projets img {
+  width: 100%;
 }
 
-.container-projects .project {
+.container-projects {
+  width: 100%;
+  height: auto;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: row;
-  width: 60vw;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  gap: 25px;
+}
+
+.project {
+  text-decoration: none;
+  max-width: 30%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   border: 1.2px solid #00ace0;
   border-radius: 15px;
   box-sizing: border-box;
@@ -333,47 +358,74 @@ main {
   margin-top: 30px;
   background-color: #1516187f;
 }
-
-.section-projects .project:hover {
+.project:hover {
   background-color: #111213;
 }
 
-.container-projects .project-link {
+.project-link{
   text-decoration: none;
 }
 
-.section-projects .info-project {
-  padding: 30px;
-}
-
-.section-projects .project .img-project {
+.img-project {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  width: 100%;
+  max-height: 150px;
   box-sizing: border-box;
   overflow: hidden;
 }
 
-.section-projects .tecnology-project {
-  padding-top: 20px;
+.img-project img {
+  width: 100%;
 }
 
-.section-projects .info-project p {
-  padding-top: 20px;
+.project-link h2 {
+  padding: 20px 20px 0 20px;
+}
+.project-link p {
+  padding: 20px;
 }
 
-.section-projects .btn-verMas {
-  font-size: 20px;
-  font-weight: bolder;
+.tecnology-project {
+  width: 100%;
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.tecnology-project svg{
+  width: 30px;
+  height: 30px;
+  color: #d0d0d0;
+}
+.repo-link{
+  width: 100%;
+  padding-left: 20px;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.text-to-underline{
+  font-weight: 600;
+  color: #00ace0;
+  text-decoration: underline;
+}
+.btn-verMas {
+  font-size: 18px;
+  font-weight: 700;
   color: #fff;
   background: none;
   border: 1.2px solid #00ace0;
   border-radius: 15px;
   width: 200px;
   height: 60px;
-  margin-top: 50px;
-  margin-bottom: 100px;
+  margin-top: 30px;
   background-color: #1516187f;
 }
 
-.section-projects .btn-verMas:hover {
+.btn-verMas:hover {
   background-color: #151618;
 }
 
@@ -426,8 +478,9 @@ main {
   border-radius: 15px;
   overflow: hidden;
 }
-.entradas-bloggin .blog-link{
-    text-decoration: none;
+
+.entradas-bloggin .blog-link {
+  text-decoration: none;
 }
 
 .entradas-bloggin .entrada-blog img {
