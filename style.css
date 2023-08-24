@@ -170,7 +170,7 @@ header {
 
 /* Efecto degradado H1, H2*/
 .info-presentacion .gradient-text {
-  font-size: 52px;
+  font-size: 50px;
   font-weight: 500;
   animation: fluido 10s ease-in-out infinite;
   background: linear-gradient(-45deg, #e73c7e, #00C1FE, #23d5ab, #775DF7);
@@ -239,6 +239,7 @@ header {
   list-style: none;
   gap: 10px;
   text-align: center;
+  flex-wrap: wrap;
 }
 
 .perfil-tecnologias li {
@@ -279,7 +280,7 @@ header {
 }
 
 .redes-sociales svg {
-  padding: 8px;
+  padding: 5px;
   fill: #d0d0d0;
 }
 
@@ -294,10 +295,10 @@ header {
 }
 
 .fotoPerfil img {
+  display: inherit;
   width: 324px;
   height: auto;
   border-radius: 15px;
-  margin-bottom: 50px;
 }
 
 .fotoPerfil .retangule {
@@ -305,8 +306,8 @@ header {
   width: 323px;
   height: 400px;
   border-radius: 15px;
-  margin-left: 44px;
-  margin-top: -13px;
+  margin-left: 40px;
+  margin-top: 32px;
   box-sizing: border-box;
   background: #14161a;
   z-index: -999;
