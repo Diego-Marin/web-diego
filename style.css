@@ -343,7 +343,9 @@ header {
 .info-presentacion-projectos p {
   width: 100%;
   padding-top: 10px;
+  padding-right: 60px;
   font-size: 14px;
+  box-sizing: border-box;
 }
 
 .container-projects {
@@ -359,7 +361,8 @@ header {
   padding: 0 20px;
   overflow: auto;
   margin-top: 20px;
-  padding: 0 80px 20px 0;
+  padding: 33px 80px 20px 0;
+  background: #17191c;
 }
 
 /* Personaliza el scrollbar*/
@@ -392,11 +395,10 @@ header {
   min-height: 100px;
   display: flex;
   flex-direction: row;
-  border: 1.2px solid var(--colorLineas);
   border-radius: 10px;
   box-sizing: border-box;
   overflow: hidden;
-  background: var(--body-background-color);
+  background: #22252a;
 }
 
 .project:hover {
