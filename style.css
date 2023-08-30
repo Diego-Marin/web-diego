@@ -261,7 +261,6 @@ header {
   font-size: 20px;
   font-weight: bolder;
   color: var(--colorText);
-  background-color: var(--boton-background-color);
   border: 1.2px solid var(--colorLineas);
   border-radius: 15px;
   width: 200px;
@@ -400,13 +399,17 @@ header {
   display: flex;
   flex-direction: row;
   border-radius: 10px;
-  box-sizing: border-box;
   overflow: hidden;
   background: var(--project-background-color);
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
 }
 
 .project:hover {
-  background-color: var(--project-background-color-hover);
+  border: 1px solid var(--colorLineas);
+  box-sizing: border-box;
+
 }
 
 .img-project {
